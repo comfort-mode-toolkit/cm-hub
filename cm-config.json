@@ -1,0 +1,79 @@
+{
+  "name": "Comfort Mode Toolkit Configuration",
+  "version": "1.0.0",
+  "plugins": {
+    "font-size": {
+      "enabled": true,
+      "value": "large",
+      "autoApply": false
+    },
+    "font-family": {
+      "enabled": true,
+      "value": "hyperlegible",
+      "autoApply": false
+    },
+    "color-scheme": {
+      "enabled": true,
+      "value": "light",
+      "autoApply": false,
+      "followSystemPreference": true
+    }
+  },
+  "groups": {
+    "text": {
+      "name": "Text Comfort",
+      "description": "Font size and family adjustments",
+      "plugins": ["font-size", "font-family"],
+      "enabled": true
+    },
+    "appearance": {
+      "name": "Visual Comfort",
+      "description": "Color scheme and contrast adjustments",
+      "plugins": ["color-scheme"],
+      "enabled": true
+    },
+    "all": {
+      "name": "Full Comfort Mode",
+      "description": "All comfort adjustments enabled",
+      "plugins": ["font-size", "font-family", "color-scheme"],
+      "enabled": true
+    }
+  },
+  "ui": {
+    "toggleButton": {
+      "enabled": true,
+      "position": "bottom-right",
+      "label": "Comfort Mode",
+      "showLabels": true
+    },
+    "panel": {
+      "enabled": true,
+      "position": "right",
+      "showOnToggle": true,
+      "allowIndividualControls": true
+    }
+  },
+  "storage": {
+    "type": "localStorage",
+    "key": "comfort-mode-preferences",
+    "remember": true,
+    "expiry": null
+  },
+  "accessibility": {
+    "announceChanges": true,
+    "keyboardNavigation": true,
+    "focusManagement": true
+  },
+  "advanced": {
+    "cssCustomProperties": true,
+    "respectBrandingSelectors": [
+      ".brand-logo",
+      ".company-colors",
+      "[data-preserve-styling]"
+    ],
+    "excludeSelectors": [
+      ".no-comfort-mode",
+      "[data-comfort-exclude]"
+    ]
+  }
+}
