@@ -137,3 +137,7 @@ dist
 # Vite logs files
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
+
+# Comfort Mode Toolkit specific ignores
+# Keep dist/ for distribution but ignore source maps
+dist/*.map

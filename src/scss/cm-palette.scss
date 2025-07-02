@@ -1,0 +1,299 @@
+// Comfort Mode Palette - Central SCSS file with CSS custom properties and utility classes
+// This file defines all theming variables and provides atomic and composed utility classes
+
+// CSS Custom Properties - Default values
+:root {
+  // Font sizes
+  --cm-font-size-small: 0.875rem;     // 14px
+  --cm-font-size-medium: 1rem;        // 16px (default)
+  --cm-font-size-large: 1.25rem;      // 20px
+  --cm-font-size-xl: 1.5rem;          // 24px
+  --cm-font-size-xxl: 2rem;           // 32px
+
+  // Font families
+  --cm-font-family-default: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --cm-font-family-hyperlegible: 'Atkinson Hyperlegible', Arial, sans-serif;
+  --cm-font-family-dyslexic: 'OpenDyslexic', Arial, sans-serif;
+  --cm-font-family-serif: Georgia, 'Times New Roman', serif;
+  --cm-font-family-mono: 'Consolas', 'Monaco', 'Courier New', monospace;
+
+  // Color schemes - Light mode (default)
+  --cm-bg-color: #ffffff;
+  --cm-text-color: #333333;
+  --cm-accent-color: #0066cc;
+  --cm-border-color: #e0e0e0;
+  --cm-hover-color: #f5f5f5;
+
+  // Color schemes - Dark mode
+  --cm-dark-bg-color: #1a1a1a;
+  --cm-dark-text-color: #e0e0e0;
+  --cm-dark-accent-color: #4da6ff;
+  --cm-dark-border-color: #404040;
+  --cm-dark-hover-color: #2a2a2a;
+
+  // Color schemes - High contrast
+  --cm-high-contrast-bg-color: #000000;
+  --cm-high-contrast-text-color: #ffffff;
+  --cm-high-contrast-accent-color: #ffff00;
+  --cm-high-contrast-border-color: #ffffff;
+  --cm-high-contrast-hover-color: #333333;
+
+  // Spacing and layout
+  --cm-spacing-xs: 0.25rem;
+  --cm-spacing-sm: 0.5rem;
+  --cm-spacing-md: 1rem;
+  --cm-spacing-lg: 1.5rem;
+  --cm-spacing-xl: 2rem;
+
+  // Motion preferences
+  --cm-transition-duration: 0.3s;
+  --cm-transition-easing: ease-in-out;
+}
+
+// Placeholders for DRY code - these will be extended by atomic classes
+%cm-font-size-base {
+  font-size: var(--cm-font-size-medium);
+}
+
+%cm-font-family-base {
+  font-family: var(--cm-font-family-default);
+}
+
+%cm-color-scheme-base {
+  background-color: var(--cm-bg-color);
+  color: var(--cm-text-color);
+}
+
+%cm-transition-base {
+  transition: all var(--cm-transition-duration) var(--cm-transition-easing);
+}
+
+// Atomic Utility Classes - Font Sizes
+.cm-font-size-small {
+  @extend %cm-font-size-base;
+  font-size: var(--cm-font-size-small) !important;
+}
+
+.cm-font-size-medium {
+  @extend %cm-font-size-base;
+  font-size: var(--cm-font-size-medium) !important;
+}
+
+.cm-font-size-large {
+  @extend %cm-font-size-base;
+  font-size: var(--cm-font-size-large) !important;
+}
+
+.cm-font-size-xl {
+  @extend %cm-font-size-base;
+  font-size: var(--cm-font-size-xl) !important;
+}
+
+.cm-font-size-xxl {
+  @extend %cm-font-size-base;
+  font-size: var(--cm-font-size-xxl) !important;
+}
+
+// Atomic Utility Classes - Font Families
+.cm-font-family-default {
+  @extend %cm-font-family-base;
+  font-family: var(--cm-font-family-default) !important;
+}
+
+.cm-font-family-hyperlegible {
+  @extend %cm-font-family-base;
+  font-family: var(--cm-font-family-hyperlegible) !important;
+}
+
+.cm-font-family-dyslexic {
+  @extend %cm-font-family-base;
+  font-family: var(--cm-font-family-dyslexic) !important;
+}
+
+.cm-font-family-serif {
+  @extend %cm-font-family-base;
+  font-family: var(--cm-font-family-serif) !important;
+}
+
+.cm-font-family-mono {
+  @extend %cm-font-family-base;
+  font-family: var(--cm-font-family-mono) !important;
+}
+
+// Atomic Utility Classes - Color Schemes
+.cm-color-scheme-light {
+  @extend %cm-color-scheme-base;
+  background-color: var(--cm-bg-color) !important;
+  color: var(--cm-text-color) !important;
+  
+  a {
+    color: var(--cm-accent-color) !important;
+  }
+  
+  &:hover {
+    background-color: var(--cm-hover-color) !important;
+  }
+}
+
+.cm-color-scheme-dark {
+  @extend %cm-color-scheme-base;
+  background-color: var(--cm-dark-bg-color) !important;
+  color: var(--cm-dark-text-color) !important;
+  
+  a {
+    color: var(--cm-dark-accent-color) !important;
+  }
+  
+  &:hover {
+    background-color: var(--cm-dark-hover-color) !important;
+  }
+}
+
+.cm-color-scheme-high-contrast {
+  @extend %cm-color-scheme-base;
+  background-color: var(--cm-high-contrast-bg-color) !important;
+  color: var(--cm-high-contrast-text-color) !important;
+  
+  a {
+    color: var(--cm-high-contrast-accent-color) !important;
+  }
+  
+  &:hover {
+    background-color: var(--cm-high-contrast-hover-color) !important;
+  }
+}
+
+// Motion preferences
+.cm-reduced-motion {
+  --cm-transition-duration: 0s;
+  
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+.cm-motion-enhanced {
+  @extend %cm-transition-base;
+  --cm-transition-duration: 0.5s;
+}
+
+// Composed Utility Classes - Built from atomic classes
+.cm-text {
+  // Combines text-related comfort settings
+  &.cm-text-small {
+    @extend .cm-font-size-small;
+  }
+  
+  &.cm-text-large {
+    @extend .cm-font-size-large;
+  }
+  
+  &.cm-text-xl {
+    @extend .cm-font-size-xl;
+  }
+  
+  &.cm-text-hyperlegible {
+    @extend .cm-font-family-hyperlegible;
+  }
+  
+  &.cm-text-dyslexic {
+    @extend .cm-font-family-dyslexic;
+  }
+}
+
+.cm-comfort {
+  // Base comfort mode settings
+  @extend %cm-transition-base;
+  line-height: 1.6;
+  letter-spacing: 0.02em;
+  
+  &.cm-comfort-text-large {
+    @extend .cm-font-size-large;
+  }
+  
+  &.cm-comfort-hyperlegible {
+    @extend .cm-font-family-hyperlegible;
+  }
+  
+  &.cm-comfort-dark {
+    @extend .cm-color-scheme-dark;
+  }
+  
+  &.cm-comfort-high-contrast {
+    @extend .cm-color-scheme-high-contrast;
+  }
+}
+
+.cm-all {
+  // Applies all base comfort settings
+  @extend .cm-comfort;
+  @extend .cm-font-size-large;
+  @extend .cm-font-family-hyperlegible;
+  
+  // Apply to common elements
+  h1, h2, h3, h4, h5, h6 {
+    @extend .cm-font-family-hyperlegible;
+    line-height: 1.4;
+  }
+  
+  p, li, td, th {
+    @extend .cm-font-size-large;
+    line-height: 1.6;
+  }
+  
+  a {
+    text-decoration: underline;
+    text-underline-offset: 0.2em;
+  }
+  
+  button, input, select, textarea {
+    @extend .cm-font-size-large;
+    @extend .cm-font-family-hyperlegible;
+  }
+}
+
+// Utility class for when Comfort Mode is enabled
+.cm-enabled {
+  // This class is applied to html or body when Comfort Mode is active
+  &.cm-font-size-large {
+    font-size: var(--cm-font-size-large);
+  }
+  
+  &.cm-font-family-hyperlegible {
+    font-family: var(--cm-font-family-hyperlegible);
+  }
+  
+  &.cm-color-scheme-dark {
+    @extend .cm-color-scheme-dark;
+  }
+  
+  &.cm-color-scheme-high-contrast {
+    @extend .cm-color-scheme-high-contrast;
+  }
+}
+
+// Responsive considerations
+@media (max-width: 768px) {
+  .cm-font-size-large {
+    font-size: calc(var(--cm-font-size-large) * 0.9);
+  }
+  
+  .cm-font-size-xl {
+    font-size: calc(var(--cm-font-size-xl) * 0.9);
+  }
+  
+  .cm-font-size-xxl {
+    font-size: calc(var(--cm-font-size-xxl) * 0.9);
+  }
+}
+
+// Print styles
+@media print {
+  .cm-color-scheme-dark,
+  .cm-color-scheme-high-contrast {
+    background-color: white !important;
+    color: black !important;
+  }
+}

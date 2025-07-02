@@ -1,0 +1,47 @@
+{
+  "name": "comfort-mode-toolkit",
+  "version": "1.0.0",
+  "description": "A modular toolkit for making websites more comfortable and accessible",
+  "main": "src/js/cm-toolkit.js",
+  "scripts": {
+    "build": "npm run build-scss && npm run copy-assets",
+    "build-scss": "sass src/scss/cm-palette.scss dist/cm-palette.css --style=compressed",
+    "build-scss-dev": "sass src/scss/cm-palette.scss dist/cm-palette.css --style=expanded --watch",
+    "copy-assets": "cp src/js/cm-toolkit.js dist/ && cp plugins/*.js dist/plugins/ && cp cm-config.json dist/",
+    "dev": "npm run build-scss-dev",
+    "serve": "http-server . -p 8080 -o",
+    "test": "echo \"Tests will be added in future versions\"",
+    "clean": "rm -rf dist/*"
+  },
+  "keywords": [
+    "accessibility",
+    "comfort-mode",
+    "inclusive-design",
+    "typography",
+    "color-scheme",
+    "modular",
+    "plugins"
+  ],
+  "author": "Comfort Mode Toolkit Contributors",
+  "license": "GPL-3.0",
+  "devDependencies": {
+    "sass": "^1.69.0",
+    "http-server": "^14.1.1"
+  },
+  "files": [
+    "dist/",
+    "src/",
+    "plugins/",
+    "cm-config.json",
+    "README.md",
+    "LICENSE"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lalithaar/comfort-mode-toolkit.git"
+  },
+  "bugs": {
+    "url": "https://github.com/lalithaar/comfort-mode-toolkit/issues"
+  },
+  "homepage": "https://github.com/lalithaar/comfort-mode-toolkit#readme"
+}
