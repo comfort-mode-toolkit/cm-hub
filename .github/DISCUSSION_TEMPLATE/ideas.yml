@@ -1,9 +1,5 @@
 title: "[Ideas] "
-name: "💡 New Idea or Work-in-Progress"
-description: "Share a new accessibility idea or ongoing project (e.g. color-scheme, font settings, etc.) and get community feedback."
-labels:
-  - "idea"
-  - "wip"
+labels: ["wip","give suggestions"]
 body:
   - type: markdown
     attributes:
