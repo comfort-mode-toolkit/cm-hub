@@ -1,0 +1,72 @@
+title: "[Ideas] "
+name: "💡 New Idea or Work-in-Progress"
+description: "Share a new accessibility idea or ongoing project (e.g. color-scheme, font settings, etc.) and get community feedback."
+labels:
+  - "idea"
+  - "wip"
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## 💡 Share your idea or work-in-progress!
+
+        Use this template to describe a new accessibility idea, feature, or something you’re currently working on (like a new color scheme or an experimental setting). The community can help by giving suggestions, sharing related research, or joining in!
+
+  - type: input
+    id: title
+    attributes:
+      label: Short Title
+      description: Give your idea or WIP a clear, descriptive title (e.g. "High-Contrast Color Scheme", "Font Settings Panel").
+      placeholder: "e.g. High-Contrast Color Scheme"
+    validations:
+      required: true
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: What are you working on or proposing?
+      description: Briefly explain your idea or what you're building. What problem does it solve? Who could it help?
+      placeholder: "Describe the idea, feature, or project..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: progress
+    attributes:
+      label: What have you done so far?
+      description: Share any progress, sketches, code, screenshots, or thoughts. If this is just an idea, tell us what you’ve thought about or researched!
+      placeholder: "Share your progress, research, or questions so far..."
+    validations:
+      required: false
+
+  - type: textarea
+    id: feedback
+    attributes:
+      label: What kind of feedback or help would you like?
+      description: Are you looking for design advice, technical help, research, or just general thoughts?
+      placeholder: "Let us know what help or feedback would be most useful..."
+    validations:
+      required: false
+
+  - type: textarea
+    id: related
+    attributes:
+      label: Related Discussions or References
+      description: Link to any related ideas, discussions, research papers, or issues if you know them.
+      placeholder: "e.g. [Research on color accessibility](https://...), Previous discussion: #42"
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: tags
+    attributes:
+      label: Tags (optional)
+      description: Select any tags that fit your idea or work-in-progress.
+      options:
+        - label: color
+        - label: font
+        - label: motion
+        - label: layout
+        - label: content
+        - label: research
+        - label: other
