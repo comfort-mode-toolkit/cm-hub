@@ -117,10 +117,13 @@ That’s perfectly fine! We welcome newcomers and provide guidance. Start with d
 
 ## How to Get Started
 
-- Read the [General workflow guide]([../comfort-mode-hub.md](https://github.com/comfort-mode-toolkit/cm-hub?tab=readme-ov-file)) for community values, workflow, and project structure.
 - Dive into the ["Beyond Compliance" paper](https://doi.org/10.48550/arXiv.2506.10324) for background and inspiration.
-- Check out our [planner](https://github.com/orgs/comfort-mode-toolkit/projects/2/views/1).
-- Join our [GitHub Discussions](https://github.com/comfort-mode/cm-hub/discussions) to introduce yourself and share your interests.
+- [Introduce yourself here (hobbies and weird facts welcome!)](https://github.com/comfort-mode-toolkit/cm-hub/discussions/4)
+- checkout at our [planner](https://github.com/orgs/comfort-mode-toolkit/projects/2/views/1) for tasks (we’re adding more issues soon!) that interests you to get started
+- Read the [General workflow guide]([../comfort-mode-hub.md](https://github.com/comfort-mode-toolkit/cm-hub?tab=readme-ov-file)) for community values, workflow, and project structure if you need more info
+- If you need any help, comment under the respective issue you are working on, or start a new thread in [discussions](https://github.com/comfort-mode-toolkit/cm-hub/discussions)
+
+
 
 ---
 
