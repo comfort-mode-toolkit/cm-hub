@@ -50,7 +50,23 @@ Welcome, Comfort Mode researchers! This guide will help you carry out and docume
 - Give enough info for others to find the original.
 
 ---
+## 7. Include real life instances if you find them on any forums like reddit
 
+- Real life experiences matter as much as any scientific study. If you find any relevant stories related to the topic, do add it to the spec. But balance the findings with academic papers and real life best practises too unless it's specifically mentioned as a case study collection.
+> **IMPORTANT GUIDELINE:**
+>
+> When including user stories, forum posts, or lived experiences:
+> - **Never label or diagnose the user.**
+> - **Never mention the user's name, username, or any identifying information.**
+> - **Do not paraphrase or interpret—simply quote the relevant text.**
+> - This ensures we are respectful, non-judgmental, and privacy-focused in our research and documentation.
+- An example could be:
+``` md
+> "Animations like parallax scrolling make me dizzy—I wish there was an option to turn them off."  
+> — user on r/accessibility
+```
+
+*(No username or identifying info included. No interpretation or diagnosis—just the direct quote.)*
 ## 7. Collaborate
 
 - If you start work on a topic, comment on the relevant GitHub issue so others know.
@@ -100,7 +116,7 @@ _Describe the challenge or user need this research addresses._
 - **Studies, experiments, or data supporting this model:**  
   - (List papers, URLs, key findings, quotes, etc.)
 - **Any known limitations or criticisms:**  
-
+- Any real life findings
 ---
 
 ## Comparison to Other Models
