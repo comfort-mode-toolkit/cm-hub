@@ -1,5 +1,4 @@
 # Comfort Mode: Spacing & Scaling Experiment  
-_A research log under `/research/spacing`_
 
 Hi friend 👋  
 
@@ -146,15 +145,35 @@ Once we gather ~200+ responses, we’ll publish:
 All free, open source, and forever non-commercial.
 
 ---
+# 🌸 Want to contribute?
+We’d love to have you onboard!
+You can start by checking out our public [planner](https://github.com/orgs/comfort-mode-toolkit/projects/2) — we’re actively adding more tasks soon, but you’re welcome to jump into anything that resonates with you.
 
-## 🤲 How You Can Help
+🧭 The planner includes:
+
+- Quick, beginner-friendly issues
+- Research & testing help (non-code!)
+- Frontend enhancements
+- Documentation and writing polish
+
+Whether you're a developer, designer, researcher, or just passionate about making the web feel kinder — you’re welcome here.
+Comfort Mode is built on collaboration, and we truly believe every thoughtful voice makes it better.
+
+🪷 Check the planner →
+🛠️ Pick something that excites you
+💬 Drop a comment or open a PR anytime
+
+## 🤲 Other Ways You Can Help
 
 - Share your honest comfort experiences at [Our Github discussions thread](https://github.com/comfort-mode-toolkit/cm-hub/discussions/7) or [Reddit](https://www.reddit.com/r/accessibility/comments/1lu0pms/what_would_make_the_web_feel_more_comfortable_to/)
 - Star our repo, join a discussion, or submit a PR  
-- Tell us if something feels off, or if we can phrase things better  
+- Tell us if something feels off, or if we can phrase things better
+- Look at our planner for ongoing tasks ( we are adding more soon! ) and contribute as much as you can 
 
 We’re here to build this together. Not for labels. Not for checkboxes. But for care.
 
+Thank you for caring — it already means so much 💛
+Let’s build something gentle, together.
 💛  
 With gratitude,  
 _— The Comfort Mode Team_  
