@@ -1,0 +1,35 @@
+name: Greetings
+
+on: [pull_request_target, issues]
+
+jobs:
+  greeting:
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+      pull-requests: write
+    steps:
+      - uses: actions/first-interaction@v1
+        with:
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          issue-message: |
+            Hi there! 👋
+
+            Thank you so much for opening your first issue in this project — we’re really glad you're here. 🪷  
+            Whether you're reporting a bug, sharing a thought, or suggesting an idea, your voice helps us grow stronger, kinder, and more useful for everyone.
+
+            If you’re unsure about anything, please don’t hesitate to ask. This space is meant to be welcoming, respectful, and collaborative — you belong here.
+
+            With gratitude,  
+            🌸 — The Comfort Mode team
+
+          pr-message: |
+            Hey friend! ✨
+
+            Wow — your first pull request! Thank you for taking the time to contribute 💛  
+            Every line of code, every idea, every little fix brings us closer to a more inclusive, comfortable web. It means the world that you’re helping make that vision real.
+
+            If you have any questions, need a hand, or just want to say hi, we’re here and listening. This project grows because of contributors like you — so thank you, truly.
+
+            With warmth,  
+            🌿 — The Comfort Mode team
